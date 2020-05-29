@@ -1,18 +1,30 @@
 public class Flight {
 
-    private String name;
-    private int numberOfBags;
+    private String flightName;
+    private String destination;
+    private String departure;
+    private String departureTime;
 
-    public Flight(String name, int numberOfBags){
-        this.name = name;
-        this.numberOfBags = numberOfBags;
+    public Flight(String flightName, String destination, String departure, String departureName){
+        this.flightName = flightName;
+        this.destination = destination;
+        this.departure = departure;
+        this.departureTime = departure;
     }
 
-    public String getName(){
-        return this.name;
+    public String getFlightName(){
+        return this.flightName;
     }
 
-    public int getNumberOfBags(){
-        return this.numberOfBags;
+    public String getDestination(){
+        return this.destination;
+    }
+
+    public String getDeparture(){
+        return this.departure;
+    }
+
+    public String getDepartureTime(){
+        return this.departureTime;
     }
 }
