@@ -1,20 +1,22 @@
-public enum Plane {
+public class Plane {
 
-    private int capacity;
-    private int totalWeight;
+    private PlaneType capacity;
+    private PlaneType totalWeight;
 
-    public Plane(int capacity, int totalWeight){
+    public Plane(PlaneType capacity, PlaneType totalWeight){
         this.capacity = capacity;
         this.totalWeight = totalWeight;
     }
 
-    public int getCapacity(){
+    public PlaneType getCapacity(){
         return this.capacity;
     }
 
-    public int getTotalWeight(){
+    public PlaneType getTotalWeight(){
         return this.totalWeight;
     }
 
-
+    public int getValueFromEnum(){
+        return this.capacity.getValue();
+    }
 }
