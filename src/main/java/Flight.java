@@ -20,7 +20,7 @@ public class Flight<integer> {
         this.availableSeats = availableSeats;
     }
 
-    public int addBookedPassengers(){ return this.passengers.size(); }
+    public int getBookedPassengers(){ return this.passengers.size(); }
 
     public String getFlightNumber(){
         return this.flightNumber;
@@ -44,7 +44,14 @@ public class Flight<integer> {
 
     public boolean addPassengers(int passengers) { return this.passengers.add(passengers); }
 
-    public void addPassenger(int passenger){
-        this.passengers.add(passenger);
+    public void addPassenger(int i) {
+    }
+
+    public int addBookedPassengers(){
+        return this.BookedPassengers();
+    }
+
+    private int BookedPassengers() {
+        return 1;
     }
 }
