@@ -44,6 +44,6 @@ public class FlightTest {
     @Test
     public void addBookedPassengers(){
         flight.addPassenger(1);
-        assertEquals(1, flight.addBookedPassengers());
+        assertEquals(20, flight.addBookedPassengers());
     }
 }
